@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(115, 190, 252);
+}
+
+.title {
+  margin-left: 46%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.modalOff {
+  display: none;
+}
+
+.modalOn {
+  border-radius: 20px;
+  width: 400px;
+  height: 250px;
+  position: fixed;
+  top: 33%;
+  left: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  opacity: 1;
+}
+
+#modalOn {
+  pointer-events: none;
+  opacity: 0.1;
+}
+
+.inputAndButton {
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+.articles {
+  background-color: white;
+  margin-left: 23%;
+  border-radius: 20px;
+  margin-top: 50px;
+  width: 700px;
+  min-height: 100px;
+}
+
+.articleImgAndTitleAndContent {
+  border: solid rgb(115, 190, 252);
+  display: flex;
+  padding-top: 30px;
+}
+
+.articleTitle {
+  font-size: 20px;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#articleContnet {
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+}

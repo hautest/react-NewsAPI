@@ -1,15 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const NewsDisplay = ({ onSubmit, APIarticles }) => {
-  const articles = APIarticles;
-  console.log(articles);
+const NewsDisplay = ({ apiArticles, makeModal }) => {
   return (
-    articles &&
-    articles.map((array) => (
-      <div>
+    apiArticles &&
+    apiArticles.map((array) => (
+      <div className="articleImgAndTitleAndContent">
+        <img alt="이미지 없음" src={array.urlToImage}></img>
         <div>
-          <div> {array.title}</div>
-          <div> {array.content} </div>
+          <a className="articleTitle" href={array.url}>
+            {array.title}
+          </a>
+          <div
+            id="articleContnet"
+            onClick={makeModal}
+            className={array.url}
+            title={array.title}
+          >
+            {array.content}
+          </div>
         </div>
       </div>
     ))
